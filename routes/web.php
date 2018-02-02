@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('finetutors.index');
 });
+
+Route::get('/tutorSignUp', function () {
+    return view('finetutors.tutorSignUp');
+});

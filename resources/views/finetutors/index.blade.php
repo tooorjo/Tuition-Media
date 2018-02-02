@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('finetutors.layout')
 
-  <head>
+@section('head')
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<title>Homepage</title>
 
-    <title>Agency - Start Bootstrap Theme</title>
-
-    <!-- Bootstrap core CSS -->
+	 <!-- Bootstrap core CSS -->
     {!! Html::style("finetutors/vendor/bootstrap/css/bootstrap.min.css") !!}
     <!-- Custom fonts for this template -->
     {!! Html::style("finetutors/vendor/font-awesome/css/font-awesome.min.css") !!}
@@ -21,13 +15,12 @@
 
     <!-- Custom styles for this template -->
     {!! Html::style("finetutors/css/agency.min.css") !!}
+	
+@stop
 
-  </head>
+@section('content')
 
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+	<nav class="navbar navbar-expand-lg navbar-default fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">FineTutors</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +47,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Header -->
     <header class="masthead">
       <div class="container">
@@ -94,8 +86,7 @@
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Browse tutors</h4>
-            <p class="text-muted">Students from various universities are the registered tutors here. Choose the best suited tutor 
-			according to your need.</p>
+            <p class="text-muted">Students from various universities are the registered tutors here. Choose the best suited tutor according to your need.</p>
           </div>
         </div>
       </div>
@@ -112,14 +103,14 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="finetutors/img/team/1.jpg" alt="">
               <h4>As a Student/Parent</h4>
               <p class="text-muted">Quick registration that gives you the authority to create a tuition post in search of a tutor.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
+              <img class="mx-auto rounded-circle" src="finetutors/img/team/3.jpg" alt="">
               <h4>As a Tutor</h4>
               <p class="text-muted">If you are interested in teaching, create your tutor account. This will enlist you 
 			  in our tutors list. You will get tuition offers which are appropriate for you and suit your requirments. By the way, it's free.</p>
@@ -140,42 +131,11 @@
         </div>
       </div>
     </section>
+@stop
 
+@section('footer')
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-2">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-5">
-            <span class="copyright">Copyright &copy; finetutors.com 2017</span>
-          </div>
-          
-          <div class="col-md-5">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    
-    <!-- Bootstrap core JavaScript -->
+    	    <!-- Bootstrap core JavaScript -->
     {!! Html::script("finetutors/vendor/jquery/jquery.min.js") !!}
     {!! Html::script("finetutors/vendor/bootstrap/js/bootstrap.bundle.min.js") !!}
     <!-- Plugin JavaScript -->
@@ -183,10 +143,7 @@
     <!-- Contact form JavaScript -->
     {!! Html::script("finetutors/js/jqBootstrapValidation.js") !!}
     {!! Html::script("finetutors/js/contact_me.js") !!}
-
+	
     <!-- Custom scripts for this template -->
     {!! Html::script("finetutors/js/agency.min.js") !!}
-
-  </body>
-
-</html>
+@stop

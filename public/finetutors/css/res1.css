@@ -1,0 +1,31 @@
+.h-inline {
+  display:inline;
+  }
+.float-l {
+float: left;
+	}
+.float-r {
+float: right;
+	}
+.dtlview-drop .dropdown-menu {
+width: 850px;
+padding: 25px;
+	}
+.navbar .btn-inline, .navbar .btn-group-inline {
+margin-top: 0 !important;
+	}
+.btn-square {
+padding: 4px 6px !important;
+	}
+.hr-dark {
+border-top: 1px solid #A2A2A2;
+border-bottom: 1px solid #C7C7C7;
+}
+.row-num {
+	font-size: 17.5px;
+	font-weight: bold;
+	line-height: 30px;
+}
+.label-small, .label-small .controls label {
+font-size: 12px;
+  }
