@@ -4,13 +4,14 @@
 
 	<title>Tutor registration</title>
   
+    <!-- Bootstrap core CSS -->
     {!! Html::style("finetutors/vendor/bootstrap/css/bootstrap.min.css") !!}
     <!-- Custom fonts for this template -->
     {!! Html::style("finetutors/vendor/font-awesome/css/font-awesome.min.css") !!}
 
- <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  
  
  {!! Html::style("https://fonts.googleapis.com/css?family=Montserrat:400,700") !!} 
     {!! Html::style('https://fonts.googleapis.com/css?family=Kaushan+Script') !!}
@@ -18,7 +19,8 @@
     {!! Html::style('https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700') !!} 
 
      {!! Html::style("finetutors/css/agency.min.css") !!}
-  
+
+
 @stop
 
 @section('content')
@@ -49,56 +51,130 @@
         </div>
       </div>
     </nav>
+  <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Register as tutor</div>
+          
+      </div>
+    </header>
+
+<div class="container">
+  <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #bbbbbb;
+  padding: 80px;
+  }
+h1 {
+  text-align: center;  
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+.form-group{
+  padding:15px;
+  background-color: #ffffff;
+}
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+label{
+  text-align:left;
+}
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+</style>
+<body>
+<form id="regForm" action="/action_page.php">
   
-  <div class="container">
-  <h2>Horizontal form</h2>
-  <form class="form-horizontal " action="/action_page.php">
-     
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Email:</label>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab"><h1>Basic Information</h1>
+     <div class="form-group">
+      <label class="control-label col-sm-6" for="email">Email:</label>
       <div class="col-sm-10">
         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <label class="control-label col-sm-6" for="pwd">Password:</label>
       <div class="col-sm-10">          
         <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="name">Name:</label>
+      <label class="control-label col-sm-6" for="name">Name:</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="address">Present Address:</label>
+      <label class="control-label col-sm-6" for="address">Present Address:</label>
       <div class="col-sm-10">
         <textarea class="form-control" rows="3" id="address"></textarea>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="phone">Phone:</label>
+      <label class="control-label col-sm-6" for="phone">Phone:</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone">
       </div>
     </div>
 
-
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <div class="checkbox">
-          <label><input type="checkbox" name="remember"> Remember me</label>
-        </div>
-      </div>
-    </div>
-
   <div class="form-group">
-     <label class="control-label col-sm-2" for="gender">Gender:</label>
+     <label class="control-label col-sm-6" for="gender">Gender:</label>
     <div class="col-sm-10">
       <label class="radio-inline">
         <input type="radio" name="optradio">Male
@@ -112,28 +188,25 @@
     </div>
   </div>
 
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="photo">Upload photo:</label>
-    <div class="col-sm-10">
-      <input type="file" id="photo" name="usr_photo" required>
-      <input type="submit" class="btn btn-default">
-    </div>
-  </div>
-
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
+<!--   <div class="form-group right" style="padding:40px">        
+      <div class="col-sm-offset-2" >
         <button type="submit" class="btn btn-default">Submit</button>
       </div>
     </div>
-  </form>
-</div>
-
-<div class="container">
-  <h2>Horizontal form2</h2>
-  <form class="form-horizontal" action="/action_page.php">
-     
+-->
+  </div>
+  <div class="tab"><h1>Your Photo</h1>
     <div class="form-group">
-       <label class="control-label col-sm-2" for="edulevel">Educational level:</label>
+    <label class="control-label col-sm-6" for="photo">Upload photo:</label>
+    <div class="col-sm-10">
+      <input type="file" id="photo" name="usr_photo" required>
+     
+    </div>
+  </div>
+  </div>
+  <div class="tab"><h1>Your Educational Information</h1>
+     <div class="form-group" >
+       <label class="control-label col-sm-6" for="edulevel">Educational level:</label>
       <div class="col-sm-10">
         <select class="form-control" id="select" required>
         <option >School</option>
@@ -143,31 +216,29 @@
       </div>
     </div>
 
-
-
     <div class="form-group">
-      <label class="control-label col-sm-2" for="degree">Degree Title:</label>
+      <label class="control-label col-sm-6" for="degree">Degree Title:</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="degree" placeholder="exp. Honors,Masters" name="degree">
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="major">Major/Subject:</label>
+      <label class="control-label col-sm-6" for="major">Major/Subject:</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="major" placeholder="exp. CSE, Physics" name="major">
       </div>
     </div>
     
     <div class="form-group">
-      <label class="control-label col-sm-2" for="institute">Institute Name:</label>
+      <label class="control-label col-sm-6" for="institute">Institute Name:</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="institute" placeholder="Enter your College/University" name="institute">
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="startyear">Starting Year:</label>
+      <label class="control-label col-sm-6" for="startyear">Starting Year:</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="startyear" placeholder="Enter starting year" name="startyear">
       </div>
@@ -175,7 +246,7 @@
 
 
   <div class="form-group">
-     <label class="control-label col-sm-2" for="studentship">Current Student?</label>
+     <label class="control-label col-sm-6" for="studentship">Current Student?</label>
     <div class="col-sm-10">
       <label class="radio-inline">
         <input type="radio" name="optradio">Yes
@@ -186,22 +257,11 @@
       
     </div>
   </div>
-
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
-    </div>
-  </form>
-</div>
-      
-<div class="container">
-  <h2>Horizontal form3</h2>
-  <form class="form-horizontal" action="/action_page.php">
-     
-  <div class="form-group">
-    <label class="control-label col-sm-3" for="ver">You teach:</label>
-    <div class="col-sm-9">
+  </div>
+  <div class="tab"><h1>Tuition Related Information</h1>
+    <div class="form-group">
+    <label class="control-label col-sm-6" for="ver">You teach:</label>
+    <div class="col-sm-10">
       <label class="checkbox-inline">
         <input type="checkbox" value="">Bangla Version
       </label>
@@ -215,8 +275,8 @@
 </div>
 
   <div class="form-group">
-    <label class="control-label col-sm-3" for="classes">Preffered Classes:</label>
-    <div class="col-sm-9">
+    <label class="control-label col-sm-36" for="classes">Preffered Classes:</label>
+    <div class="col-sm-10">
       <label class="checkbox-inline">
         <input type="checkbox" value="">1-5
       </label>
@@ -242,8 +302,8 @@
 </div>
 
   <div class="form-group">
-    <label class="control-label col-sm-3" for="courses">Courses you teach:</label>
-    <div class="col-sm-9">
+    <label class="control-label col-sm-6" for="courses">Courses you teach:</label>
+    <div class="col-sm-10">
       <label class="checkbox-inline">
         <input type="checkbox" value="">Bangla
       </label>
@@ -289,8 +349,8 @@
     </div>
 </div>
   <div class="form-group">
-    <label class="control-label col-sm-3" for="areas">Preffered locations:</label>
-    <div class="col-sm-9">
+    <label class="control-label col-sm-6" for="areas">Preffered locations:</label>
+    <div class="col-sm-10">
       <label class="checkbox-inline">
         <input type="checkbox" value="">Kewatkhali
       </label>
@@ -307,8 +367,8 @@
 </div>
 
   <div class="form-group">
-       <label class="control-label col-sm-3" for="daysofweek">Maximum days a Week:</label>
-      <div class="col-sm-9">
+       <label class="control-label col-sm-6" for="daysofweek">Maximum days a Week:</label>
+      <div class="col-sm-10">
         <select class="form-control" id="select" required>
         <option >3</option>
         <option >4</option>
@@ -318,8 +378,8 @@
     </div>
 
   <div class="form-group">
-       <label class="control-label col-sm-3" for="experience">Teaching experience:</label>
-      <div class="col-sm-9">
+       <label class="control-label col-sm-6" for="experience">Teaching experience:</label>
+      <div class="col-sm-10">
         <select class="form-control" id="select" required>
         <option >None</option>
         <option >1 year</option>
@@ -330,8 +390,8 @@
     </div>
 
   <div class="form-group">
-       <label class="control-label col-sm-3" for="minsalary">Minimum salary requirement:</label>
-      <div class="col-sm-9">
+       <label class="control-label col-sm-6" for="minsalary">Minimum salary requirement:</label>
+      <div class="col-sm-10">
         <select class="form-control" id="select" required>
         <option >Any</option>
         <option >2000tk</option>
@@ -341,21 +401,109 @@
       </div>
     </div>
 
-  <div class="form-group">
-      <label class="control-label col-sm-3" for="teachingstyle">Tell us something about your teaching style:</label>
-      <div class="col-sm-9">
+  <div class="form-group" style="padding-bottom:60px">
+      <label class="control-label col-sm-6" for="teachingstyle">Tell us something about your teaching style:</label>
+      <div class="col-sm-10">
         <textarea class="form-control" rows="4" id="teachingstyle"></textarea>
       </div>
     </div>
-
-    <div class="form-group">        
-      <div class="col-sm-offset-3 col-sm-9">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
+ 
+  </div>
+  <div>
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
-  </form>
-</div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
 
+</form>
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the crurrent tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+
+</body>
+</html>
+
+</div>
 @stop
 
 @section('footer')
@@ -370,4 +518,7 @@
   
     <!-- Custom scripts for this template -->
     {!! Html::script("finetutors/js/agency.min.js") !!}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 @stop

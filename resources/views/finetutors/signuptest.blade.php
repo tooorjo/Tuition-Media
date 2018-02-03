@@ -24,13 +24,6 @@ h1 {
   text-align: center;  
 }
 
-input {
-  padding: 10px;
-  width: 100%;
-  font-size: 17px;
-  font-family: Raleway;
-  border: 1px solid #aaaaaa;
-}
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
@@ -42,15 +35,6 @@ input.invalid {
   display: none;
 }
 
-button {
-  background-color: #4CAF50;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 17px;
-  font-family: Raleway;
-  cursor: pointer;
-}
 
 button:hover {
   opacity: 0.8;
