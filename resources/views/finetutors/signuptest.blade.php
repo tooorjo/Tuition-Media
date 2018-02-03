@@ -15,7 +15,7 @@ body {
   background-color: #ffffff;
   margin: 100px auto;
   font-family: Raleway;
-  padding: 40px;
+  padding: 140px;
   width: 70%;
   min-width: 300px;
 }

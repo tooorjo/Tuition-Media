@@ -71,7 +71,7 @@ body {
 }
 
 #regForm {
-  background-color: #bbbbbb;
+  background-color: #cccccc;
   padding: 80px;
   }
 h1 {

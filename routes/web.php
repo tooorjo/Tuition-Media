@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/tutorSignUp', function () {
     return view('finetutors.tutorSignUp');
 });
+Route::get('/signIn', function () {
+    return view('finetutors.signin');
+});
