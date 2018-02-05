@@ -21,3 +21,10 @@ Route::get('/tutorSignUp', function () {
 Route::get('/signIn', function () {
     return view('finetutors.signin');
 });
+Route::get('/tutorhomepage', function () {
+    return view('finetutors.tutorhomepage');
+});
+
+Route::get('/tutoractivity', function () {
+    return view('finetutors.tutoractivity');
+});
