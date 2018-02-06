@@ -41,9 +41,6 @@
                     <li>
                         <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Edit Profile</a>
                     </li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Settings</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -104,7 +101,6 @@ body {font-family: Arial;}
   <button class="tablinks" onclick="openCity(event, 'AppliedTuitions')">Applied Tuitions</button>
   <button class="tablinks" onclick="openCity(event, 'SuggestedTuitions')">Suggested Tuitions</button>
   <button class="tablinks" onclick="openCity(event, 'ViewProfile')">View Profile</button>
-  <button class="tablinks" onclick="openCity(event, 'EditProfile')">Edit Profile</button>
 </div>
 
 <div id="AppliedTuitions" class="tabcontent">

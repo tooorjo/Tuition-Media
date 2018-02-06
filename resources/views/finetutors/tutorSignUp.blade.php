@@ -275,7 +275,7 @@ label{
 </div>
 
   <div class="form-group">
-    <label class="control-label col-sm-36" for="classes">Preffered Classes:</label>
+    <label class="control-label col-sm-6" for="classes">Preffered Classes:</label>
     <div class="col-sm-10">
       <label class="checkbox-inline">
         <input type="checkbox" value="">1-5

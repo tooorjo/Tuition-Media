@@ -28,3 +28,6 @@ Route::get('/tutorhomepage', function () {
 Route::get('/tutoractivity', function () {
     return view('finetutors.tutoractivity');
 });
+Route::get('/tutoredit', function () {
+    return view('finetutors.tutoreditprofile');
+});

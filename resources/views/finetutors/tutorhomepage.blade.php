@@ -52,9 +52,6 @@
                     <li>
                         <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Edit Profile</a>
                     </li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Settings</a>
-                    </li>
                     
                 </ul>
             </div>
