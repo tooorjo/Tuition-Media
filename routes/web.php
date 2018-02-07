@@ -24,10 +24,21 @@ Route::get('/signIn', function () {
 Route::get('/tutorhomepage', function () {
     return view('finetutors.tutorhomepage');
 });
-
+Route::get('/studenthomepage', function () {
+    return view('finetutors.studenthomepage');
+});
+Route::get('/studentbrowsetutor', function () {
+    return view('finetutors.studentbrowsetutor');
+});
+Route::get('/studentpost', function () {
+    return view('finetutors.studentpost');
+});
 Route::get('/tutoractivity', function () {
     return view('finetutors.tutoractivity');
 });
 Route::get('/tutoredit', function () {
     return view('finetutors.tutoreditprofile');
+});
+Route::get('/studentsignup', function () {
+    return view('finetutors.studentsignup');
 });

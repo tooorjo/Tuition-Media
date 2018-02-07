@@ -72,7 +72,7 @@
     </footer>    
     </div>
     <!-- /#wrapper -->
-    
+    @yield('footer')
     <!-- jQuery -->
     <script src="finetutors/layout2/js/jquery.js"></script>
 
