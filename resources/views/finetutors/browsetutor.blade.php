@@ -2,7 +2,7 @@
 
 @section('head')
 
-	<title>Browse Tutors</title>
+	<title>Tuition Board</title>
 
 <style> 
 	select {
@@ -30,37 +30,21 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-                
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Student name <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i>Sign Out</a>
-                        </li>
-                    </ul>
+                     <a class="nav-link" href="#">Tuition Board</a>
                 </li>
+                <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#register">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">About Us</a>
+            </li>
             </ul>
-            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
-                    <li>
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Tuition Board</a>
-                    </li>
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Post a Job</a>
-                    </li>
-                    <li  class="active">
-                        <a href="charts.html"><i class="fa fa-fw fa-dashboard"></i> Browse Tutor</a>
-                    </li>
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> My Activity</a>
-                    </li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Edit Profile</a>
-                    </li>
-                    
-                </ul>
-            </div>
+
+            
             <!-- /.navbar-collapse -->
         </nav>
 	    <div >
@@ -137,9 +121,9 @@
 
 
 
-        <div class="content-wrapper col-sm-12" >
+        <div class="content-wrapper" >
 
-            <div class="col-sm-6">
+                        <div class="col-sm-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Tutor ID: 1343</h3>
@@ -147,14 +131,14 @@
                     <div class="panel-body">
                         <div class="container col-sm-12" style="font-size: 12px;">
                             <div class="col-sm-4"> <img alt="User Pic" src="https://s4.scoopwhoop.com/anj/srk/f9aa4b2f-f167-4deb-a65c-514ab307bb89.jpg" class="img-responsive"> </div>
-                			<div class="col-sm-8">
+                            <div class="col-sm-8">
                                 <span style="font-weight: bold; color: #0675c1;">Name : </span>Abu Barak<br>
                                 <span style="font-weight: bold; color: #0675c1;">Institute : </span> Bangladesh Agricultural University
                             </div>
 
                             
                             <div class="col-sm-12">
-                         		<h4><br>Teaches:<br></h4>
+                                <h4><br>Teaches:<br></h4>
                                 <span style="font-weight: bold; color: #0675c1;">Versions : </span> Bangla Medium, English Version<br>                      
                                 <span style="font-weight: bold; color: #0675c1;">Subjects :</span> General Maths,Physics ,Chemistry ,Biology<br>
                                 <span style="font-weight: bold; color: #0675c1;">Classes :</span> 6-8, 9-10, SSC, 11-12, HSC<br>
@@ -177,14 +161,14 @@
                     <div class="panel-body">
                         <div class="container col-sm-12" style="font-size: 12px;">
                             <div class="col-sm-4"> <img alt="User Pic" src="https://s4.scoopwhoop.com/anj/srk/f9aa4b2f-f167-4deb-a65c-514ab307bb89.jpg" class="img-responsive"> </div>
-                			<div class="col-sm-8">
+                            <div class="col-sm-8">
                                 <span style="font-weight: bold; color: #0675c1;">Name : </span>Abu Barak<br>
                                 <span style="font-weight: bold; color: #0675c1;">Institute : </span> Bangladesh Agricultural University
                             </div>
 
                             
                             <div class="col-sm-12">
-                         		<h4><br>Teaches:<br></h4>
+                                <h4><br>Teaches:<br></h4>
                                 <span style="font-weight: bold; color: #0675c1;">Versions : </span> Bangla Medium, English Version<br>                      
                                 <span style="font-weight: bold; color: #0675c1;">Subjects :</span> General Maths,Physics ,Chemistry ,Biology<br>
                                 <span style="font-weight: bold; color: #0675c1;">Classes :</span> 6-8, 9-10, SSC, 11-12, HSC<br>
@@ -207,14 +191,14 @@
                     <div class="panel-body">
                         <div class="container col-sm-12" style="font-size: 12px;">
                             <div class="col-sm-4"> <img alt="User Pic" src="https://s4.scoopwhoop.com/anj/srk/f9aa4b2f-f167-4deb-a65c-514ab307bb89.jpg" class="img-responsive"> </div>
-                			<div class="col-sm-8">
+                            <div class="col-sm-8">
                                 <span style="font-weight: bold; color: #0675c1;">Name : </span>Abu Barak<br>
                                 <span style="font-weight: bold; color: #0675c1;">Institute : </span> Bangladesh Agricultural University
                             </div>
 
                             
                             <div class="col-sm-12">
-                         		<h4><br>Teaches:<br></h4>
+                                <h4><br>Teaches:<br></h4>
                                 <span style="font-weight: bold; color: #0675c1;">Versions : </span> Bangla Medium, English Version<br>                      
                                 <span style="font-weight: bold; color: #0675c1;">Subjects :</span> General Maths,Physics ,Chemistry ,Biology, General Maths,Physics ,Chemistry ,Biology, General Maths,Physics ,Chemistry ,Biology<br>
                                 <span style="font-weight: bold; color: #0675c1;">Classes :</span> 6-8, 9-10, SSC, 11-12, HSC<br>
